@@ -5,12 +5,18 @@
     *A frase (ou palavra) e a letra devem ser fornecidas pelo usuário.
     */
 
-    //Entrada
+    const frase = prompt('Informe uma frase:').toLowerCase();
+    const letra = prompt('Informe a letra que deseja verificar a quantidade:').toLowerCase();
+    let qletra = []
 
+function msg(letra) {
+    for (item of frase) {
+            if (item.includes(letra)) {
+            qletra.push(item)
+        }
+    }
+    return(qletra.length)
+}
 
-    //Processamento
-
-
-    //Saída
-
+alert(msg(letra));
 </script>

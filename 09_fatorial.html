@@ -5,11 +5,17 @@
     */
 
     //Entrada
-
+    const nmr = Number(prompt(`Informe um número inteiro!`));
 
     //Processamento
-
+    function fatorial(nmr) {
+        if (nmr == 1) {
+            return 1;
+        } else {
+            return nmr * (fatorial(nmr - 1))
+        }
+    }
 
     //Saída
-
+    alert(`O fatorial de ${nmr} é ${fatorial(nmr)}`);
 </script>

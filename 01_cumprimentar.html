@@ -7,10 +7,19 @@
     */
 
     //Entrada
-
+    const nome = prompt(`informe seu nome.`).trim();
 
     //Processamento
+    function msg() {
+        if (new Date().getHours() < 12) {
+            return(`bom dia ${nome}`);
+        }
+        else {
+            return(`boa tarde ${nome}`);
+        }
+    }
 
+    alert(msg());
 
     //Saída
     

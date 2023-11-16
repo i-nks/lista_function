@@ -6,11 +6,16 @@
     */
 
     //Entrada
-
+    const F = Number(prompt(`informe uma temperatura em graus Fahrenheit.`).trim());
 
     //Processamento
+    function msg(F) {
+        return (F - 32) * 5 / 9;
+    }
 
+    const celsius = msg(F);
 
     //Saída
+    alert(`a temperatura em Celsius é ${celsius}.`);
 
 </script>

@@ -6,11 +6,15 @@
     */
 
     //Entrada
-
+    const peso = Number(prompt(`informe seu peso.`).trim());
+    const altura = Number(prompt(`informe sua altura.`).trim());
 
     //Processamento
-
+    function msg() {
+        return IMC = peso / (altura * altura);
+    }
 
     //Saída
+    alert(`seu imc é ${msg()}`);
 
 </script>

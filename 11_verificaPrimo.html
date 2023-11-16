@@ -5,10 +5,24 @@
     */
 
     //Entrada
-
+    const num = Number(prompt(`informe um número.`).trim());
 
     //Processamento
+    if (Number.isNaN(num)) {
+        alert('não é número.');
+    }
+    else {
+        function verificarP(num) {
+            for (divisor = 2; divisor < num; divisor++)
+                if (num % divisor == 0) return 'não primo.';
+            return 'primo.';
+        }
 
+        var determinadoNumero = 50;
+
+        for (i = 2; i < determinadoNumero; i++) if (verificarP(i)) console.log(i);
+        alert(verificarP(num));
+    }
 
     //Saída
 
